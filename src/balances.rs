@@ -2,6 +2,8 @@ use std::collections::BTreeMap;
 
 /// This is the Balances Module.
 /// It is a simple module which keeps track of how much balance each account has in this state machine.
+
+#[derive(Debug)]
 pub struct Pallet {
     // A simple storage mapping from accounts ('String') to their balances (ú128').
     balances: BTreeMap<String, u128>,
@@ -11,9 +13,7 @@ pub struct Pallet {
 impl Pallet {
     /// Create a new instance of the balances module.
     pub fn new() -> Self {
-        Self {
-            balances: BTreeMap::new()
-        }
+        Self { balances: BTreeMap::new() }
     }
 
     /// Set the balance of an account 'who'to some 'amount'.

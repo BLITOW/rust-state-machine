@@ -1,7 +1,8 @@
 use std::collections::BTreeMap;
 
 /// Thsi is the System Pallet.
-/// It handles low leverl state needed for your blockchain.
+/// It handles low leverl state needed for your blockchain. 
+#[derive(Debug)]
 pub struct Pallet {
     /// The current block number
     block_number: u32,
