@@ -36,5 +36,5 @@ pub trait Dispatch {
 
     /// This function takes a 'caller'and the 'call'they want to make, and returns a 'Result'
     /// based on the outcome of that funciton call.
-    fn dispatch(&mut self, caller: Self::Caller, cal: Self::Call) -> DispatchResult;
+    fn dispatch(&mut self, caller: Self::Caller, call: Self::Call) -> DispatchResult;
 }
